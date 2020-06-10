@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+  }
+body{
+
+    background-color: wheat;
+    font-family: calibri;
+    height: 100vh;
+    font-size: 16px;
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+.menu a{
+    color: tomato;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: red;
+    background-color: rgba(192, 192, 192, 0.4);
+}
+.home{
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+}
+.icone-home{
+    height: 5em;
+    border-radius: 35px;
+}
+.title, .subtitle{
+    color: navy;
+    text-align: center;
+}
+.title{
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+.subtitle{
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+.portfolio{
+    height: 90vh;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.portfolio h2{
+    margin-bottom: 1em;
+}
+.portfolio .grid{
+    display: grid;
+    gap: 2em 0em;
+}
+@media (min-width: 650px){
+    .portfolio .grid{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+}
+@media (min-width: 950px){
+    .portfolio .grid{
+        grid-template-columns: 33% 33% 33%;
+        height: calc(90vh - 3.5em);
+        justify-content: center;
+        align-content: center;
+    }
+}
+.portfolio figure{
+    text-align: center;
+}
+.imagem:hover{
+    box-shadow: black 0px 0px 20px;
+}
+.link-portfolio{
+    color: blue;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link-portfolio:hover{
+    color: navy;
+    text-decoration: underline;
+}
+.imagem{
+    height: 140px;
+    width: 270px;
+    object-fit: cover;
+}
+
